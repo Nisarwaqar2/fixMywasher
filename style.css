@@ -1,0 +1,98 @@
+
+* {
+    text-align: center;
+    margin: 50
+    padding:0 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #034174d7;
+    color: rgb(248, 243, 243);
+    padding: 10px 20px;
+}
+
+.header .logo {
+    font-size: 1.5em;
+}
+
+.menu {
+    display:none;
+}
+
+.menu ul {
+    list-style:none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li a {
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #859dee;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #082542;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services, .faq, .gallery, .contact {
+    padding: 20px;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 170px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-buttons .btn {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #28A745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: block;
+    }
+    .menu-toggle {
+        display: none;
+    }
+}
