@@ -1,0 +1,119 @@
+<!-- Google Translate Widget -->
+    <div id="google_translate_element"></div>
+
+    <!-- Translate Button -->
+    <button onclick="translateToArabic()">Translate to Arabic</button>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', includedLanguages: 'ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Translate Button Script -->
+    <script>
+        function translateToArabic() {
+            var select = document.querySelector(".goog-te-combo");
+            if (select) {
+                select.value = "ar";  // Arabic language code
+                select.dispatchEvent(new Event("change"));
+            } else {
+            }
+        }
+    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Washing Machine repair in Jeddah </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="washing_machine_7.jpg" alt="higdf"> Top quality automatic washing machine repair services</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+             </ul>
+        </nav>
+        <div class="menu-toggle">☰</div>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Expert Automatic Washing Machine, Refrigrator & Air conditioners Repair Services in Jeddah!</h2>
+        <p><h3>Quick, reliable, and affordable repairs at your doorstep.</h3></p>
+        <div class="cta-buttons">
+            <a href="tel:+9660567378083" class="btn">Call Us</a>
+            <a href="https://wa.me/9660567378083" class="btn">WhatsApp Us</a>
+            <a href="#contact" class="btn">Location</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h1>Our Services</h1>
+        <ul>
+            <img src="washing_machine_8.jpg" alt="her"> <h4>Automatic washing machine repair service with high quality and 10 years warranty</h4>
+            <h4>Automatic refrigerator repair service with high quality and reasonable prices</h4>
+            <h4>Fast service to replace damaged spare parts with high quality replacement parts</h4>
+        </ul>
+    </section>
+
+    <section id="faq" class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <ul>
+        <p><strong>How long does a repair take?</strong> Typically 1-2 hours depending on the issue.</p>
+        <p><strong>What brands do you service?</strong> We service all major brands.</p>
+        <p><strong>Do you provide warranty on repairs?</strong> Yes, we offer a 30-day warranty.</p>
+        </ul>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Brands we work with</h2>
+        <p> we repair all kind of brands,making autommatic washing machines and other home appliences</p>
+        <p>but here some papolur brands.</p>
+        <div class="gallery-images">
+            <img src="washing_machine_1.jpg" alt="Technician repairing washing machine">
+            <img src="washing_machine_2.jpg" alt="Washing machine model">
+            <img src="washing_machine_3.jpg" alt="Repair in progress">
+            <img src="washing_machine_4.jpg" alt="higdf">
+            <img src="washing_machine_5.jpg" alt="ghifg">
+            <img src="washing_machine_6.jpg" alt="oihhitroih"><h1>Why us</h1>
+            <p>We use high quality spare parts to keep your devices running perfectly.</p>
+            <p>We offer quick repairs for all types of automatic devices.</p>
+            <p>We provide maintenance services at reasonable prices to all customers.</p>
+            <p>We are always ready to provide timely maintenance.</p>
+            <p>We provide customer satisfaction through reliable warranty guarantee.</p>
+            <p>We are committed to providing high quality and safe services to our customers.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-buttons">
+            <a href="tel:+9660567378083" class="btn">Call Us</a>
+            <a href="https://wa.me/9660567378083" class="btn">WhatsApp</a>
+            <a href="#map" class="btn">Live Location</a>
+        </div>
+        <p>To visit our shop please click the location </p>
+        <p>.</p>
+        <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.2414939136283!2d39.1208804!3d21.6155114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3da482e76f0bd%3A0xd92d37a583fcf77d!2z2KjZhNin2YQg2YTZhNiq2KjYsdmK2K8!5e0!3m2!1sen!2s!4v1735668600600!5m2!1sen!2s"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+    </section>
+    <footer class="footer">
+        <p>© 2024 Automatic Washing Machine Repair | All Rights Reserved</p>
+    </footer>  
+</body>
+</html>
