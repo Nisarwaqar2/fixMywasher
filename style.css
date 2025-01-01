@@ -1,41 +1,47 @@
 
+/* Reset Styles */
 * {
-    text-align: center;
-    margin: 50
-    padding:0 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* General Body Styles */
 body {
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #034174d7;
-    color: rgb(248, 243, 243);
+    color: #fff;
     padding: 10px 20px;
 }
 
 .header .logo {
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 .menu {
-    display:none;
+    display: none; /* Initially hidden for mobile */
 }
 
 .menu ul {
-    list-style:none;
+    list-style: none;
     display: flex;
     gap: 30px;
 }
 
 .menu ul li a {
-    color: rgb(241, 241, 241);
+    color: #fff;
     text-decoration: none;
+    font-size: 1em;
 }
 
 .menu-toggle {
@@ -44,6 +50,7 @@ body {
     cursor: pointer;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -60,8 +67,10 @@ body {
     border-radius: 5px;
 }
 
+/* Services, FAQ, Gallery, and Contact Sections */
 .services, .faq, .gallery, .contact {
     padding: 20px;
+    text-align: center;
 }
 
 .gallery-images img {
@@ -81,6 +90,7 @@ body {
     border-radius: 5px;
 }
 
+/* Footer */
 .footer {
     text-align: center;
     padding: 10px;
@@ -88,10 +98,31 @@ body {
     color: white;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .gallery-images img {
+        max-width: 100px;
+    }
+}
+
 @media (min-width: 768px) {
     .menu {
         display: block;
     }
+
     .menu-toggle {
         display: none;
     }
